@@ -4,7 +4,7 @@ type Props = {}
 
 const MO = (props: Props) => {
   return (
-    <div>cp</div>
+    <div className=''>cp</div>
   )
 }
 
