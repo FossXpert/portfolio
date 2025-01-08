@@ -19,7 +19,7 @@
       onCreate = {
         npm-install = "npm ci --no-audit --prefer-offline --no-progress --timing";
         # Open editors for the following files by default, if they exist:
-        default.openFiles = [ "src/App.tsx" "src/App.ts" "src/App.jsx" "src/App.js" ];
+        default.openFiles = [ "my-project/src/App.tsx" "my-project/src/App.ts" "my-project/src/App.jsx" "my-project/src/App.js" ];
       };
       # To run something each time the workspace is (re)started, use the `onStart` hook
     };
