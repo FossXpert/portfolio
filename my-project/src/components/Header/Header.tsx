@@ -25,11 +25,28 @@ const getHeaderComponent = (header: BaseHeaderProps) => {
 }
 
 const Header = (props: Props) => {
-
+  const [activeTabComponent,setActiveTabComponent] = useState<string>(
+    headerData.header.navigation.find((item) => item.active === 'true')?.label || HOME
+  )
   return (
+    <>
     <div className='flex w-[622px] h-[55px] rounded-[100px] overflow-hidden justify-center items-center bg-[#211F23]'>
-      
+        {
+          headerData.header.navigation
+          .filter((nav) => nav.isHide === 'false')
+          .map((value,index)=>(
+            <button
+            key={value.id}
+            onClick={()=>setActiveTabComponent(value.label)}>
+              {value.label}
+            </button>
+          ))
+        }
     </div>
+    <div className='mt-4'>
+        {getHeaderComponent({label:activeTabComponent})}
+    </div>
+    </>
   )
 }
 

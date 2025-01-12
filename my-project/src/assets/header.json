@@ -11,7 +11,7 @@
                 "id":"1"
             },
             {
-                "label":"ABout",
+                "label":"About",
                 "link":"/about",
                 "active":"true",
                 "isHide":"false",
