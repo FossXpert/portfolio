@@ -28,6 +28,45 @@
         "theme":{
             "backgroundColor":"#ffffff"
         }
+    },
+    "icon_header":{
+        "navigation":[
+            {
+                "name":"Github",
+                "icon":"github_icon",
+                "active":"true",
+                "isHide":"false",
+                "id":"1"
+            },
+            {
+                "name":"Linkedin",
+                "icon":"linkedin_icon",
+                "active":"true",
+                "isHide":"false",
+                "id":"2"
+            },
+            {
+                "name":"Medium",
+                "icon":"medium_icon",
+                "active":"false",
+                "isHide":"false",
+                "id":"3"
+            },
+            {
+                "name":"Figma",
+                "icon":"figma_icon",
+                "active":"true",
+                "isHide":"false",
+                "id":"4"
+            },    
+            {
+                "name":"Codepen",
+                "icon":"codepen_icon",
+                "active":"false",
+                "isHide":"false",
+                "id":"5"
+            }
+        ]
     }
 
 }
