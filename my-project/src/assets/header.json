@@ -1,0 +1,33 @@
+{
+    "header":{
+        "title":"Welcome to My Website",
+        "logo": "https://example.com/logo.png",
+        "navigation":[
+            {
+                "label":"Home",
+                "link":"/home",
+                "active":"true",
+                "isHide":"false",
+                "id":"1"
+            },
+            {
+                "label":"ABout",
+                "link":"/about",
+                "active":"true",
+                "isHide":"false",
+                "id":"2"
+            },
+            {
+                "label":"Contact",
+                "link":"/contact",
+                "active":"true",
+                "isHide":"false",
+                "id":"3"
+            }
+        ],
+        "theme":{
+            "backgroundColor":"#ffffff"
+        }
+    }
+
+}
