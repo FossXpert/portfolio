@@ -30,7 +30,8 @@ const Header = (props: Props) => {
   )
   return (
     <>
-    <div className='flex w-[622px] h-[55px] rounded-[100px] overflow-hidden justify-center items-center bg-[#211F23]'>
+    <div className='flex'>
+    <div className='large flex flex-[70%] w-[622px] h-[55px] rounded-[100px] overflow-hidden justify-center items-center bg-[#211F23]'>
         {
           headerData.header.navigation
           .filter((nav) => nav.isHide === 'false')
@@ -42,6 +43,20 @@ const Header = (props: Props) => {
             </button>
           ))
         }
+    </div>
+    <div className='small flex w-[622px] h-[55px] rounded-[100px] overflow-hidden justify-center items-center bg-[#211F23]'>
+        {
+          headerData.header.navigation
+          .filter((nav) => nav.isHide === 'false')
+          .map((value,index)=>(
+            <button
+            key={value.id}
+            onClick={()=>setActiveTabComponent(value.label)}>
+              {value.label}
+            </button>
+          ))
+        }
+    </div>
     </div>
     <div className='mt-4'>
         {getHeaderComponent({label:activeTabComponent})}
