@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); */
+
 *{
     margin: 0;
     padding: 0;
     background-color:#0C0C0D ;
+    /* font-family: 'Railway',sans-serif; */
+}
+p{
+    font-weight: 100;
 }

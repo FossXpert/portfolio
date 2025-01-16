@@ -36,28 +36,32 @@
                 "icon":"github_icon",
                 "active":"true",
                 "isHide":"false",
-                "id":"1"
+                "id":"1",
+                "link":"https://github.com/FossXpert"
             },
             {
                 "name":"Linkedin",
                 "icon":"linkedin_icon",
                 "active":"true",
                 "isHide":"false",
-                "id":"2"
+                "id":"2",
+                "link":"https://www.linkedin.com/in/rahulray8516/"
             },
             {
                 "name":"Medium",
                 "icon":"medium_icon",
                 "active":"false",
                 "isHide":"false",
-                "id":"3"
+                "id":"3",
+                "link":""
             },
             {
                 "name":"Figma",
                 "icon":"figma_icon",
                 "active":"true",
                 "isHide":"false",
-                "id":"4"
+                "id":"4",
+                "link":"https://sprl.in/rahul-figma"
             },    
             {
                 "name":"Codepen",
