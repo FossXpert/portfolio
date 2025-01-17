@@ -1,4 +1,6 @@
 import React, { FC } from 'react';
+import bannerImage from '../../assets/Group39.png';
+
 
 type Props = {
   title:string;
@@ -19,7 +21,7 @@ const Banner:FC<Props> = ({title,description}) => {
                 </div>
             </div>
             <div className={`flex ${bo} w-[40%] h-[38%] items-center justify-center`}>
-              An image will be here
+              <img src={bannerImage} alt='banner' className={`w-[70%] h-[70%]`} />
             </div>
         </div>  
     </>
