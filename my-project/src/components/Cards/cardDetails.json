@@ -1,0 +1,19 @@
+{
+    "card":[
+        {
+            "name":"JavaScript",
+            "icon":"icon.png",
+            "color":"C3C99E"
+        },
+        {
+            "name":"React",
+            "icon":"icon.png",
+            "color":"7D9CA5"
+        },
+        {
+            "name":"Next.JS",
+            "icon":"icon.png",
+            "color":"C2C2C2"
+        }
+    ]
+}
