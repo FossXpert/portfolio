@@ -10,3 +10,7 @@ export const MEDIUM = 'medium_icon';
 export const FIGMA = 'figma_icon';
 export const CODEPEN = 'codepen_icon';
 
+//svg icon list
+export const JSICON = 'jsIcon';
+export const REACTICON = 'reactIcon';
+export const NEXTJSICON = 'nextjsIcon';

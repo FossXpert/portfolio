@@ -2,18 +2,34 @@ import React, { useState } from 'react';
 import headerData from '../../assets/header.json';
 import {
   HOME, ABOUT, CONTACT,
-  GITHUB
+  GITHUB,JSICON,REACTICON,NEXTJSICON
 } from '../../Constants/constant';
 import { BaseHeaderProps } from '@/models/models';
 import Home from '../Home/Home';
 import About from '../About';
 import Contact from '../Contact';
 import Icons from '../../assets/Icons';
+import svgIcons from '../../assets/icons-svg/icon-image'
 import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
 
 type Props = {};
 
-const getHeaderComponent = (header: BaseHeaderProps) => {
+export const getIcon = (iconName: string) => {
+  return Icons[iconName];
+};
+
+export const getIconSvg = (iconName:string) => {
+  switch (iconName){
+    case JSICON:
+      return svgIcons["jsIcon"];
+    case REACTICON:
+      return svgIcons["reactIcon"];
+    case NEXTJSICON:
+      return svgIcons["nextjsIcon"];
+  }
+}
+
+export const getHeaderComponent = (header: BaseHeaderProps) => {
   switch (header.label) {
     case HOME:
       return <Home />;
@@ -24,10 +40,6 @@ const getHeaderComponent = (header: BaseHeaderProps) => {
     default:
       return <Home />;
   }
-};
-
-const getIcon = (iconName: string) => {
-  return Icons[iconName];
 };
 
 const Header = (props: Props) => {
