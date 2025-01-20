@@ -11,8 +11,8 @@
                 "id":"1"
             },
             {
-                "label":"About",
-                "link":"/about",
+                "label":"Experience",
+                "link":"/experience",
                 "active":"true",
                 "isHide":"false",
                 "id":"2"

@@ -11,7 +11,7 @@ const bo = 'border border-solid border-white'
 const Banner:FC<Props> = ({title,description}) => {
   return (
     <>
-        <div className={` !border-red-500 text-white flex justify-between items-center mt-20 mx-[15%]`}>
+        <div className={`${bo} !border-red-500 text-white flex justify-between items-center mt-20 mx-[15%]`}>
             <div className={` flex flex-col w-[60%] h-[40%] `}>
                 <h1 className={` text-7xl p-2 `}>{title}</h1>
                 <p className={`mt-4 text-gray-400 p-2 font-light leading-[48px] text-[1.5rem]`}>{description}</p>
