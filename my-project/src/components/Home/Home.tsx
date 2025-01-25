@@ -5,7 +5,7 @@ import Experience from '../Experience/Experience';
 import Header from '../Header/Header';
 
 type Props = {}
-const bo = 'border border-solid border-white'
+export const bo = ''
 
 const Home = (props: Props) => {
   const title = "Hi, I’m Rahul";
@@ -17,14 +17,16 @@ const Home = (props: Props) => {
       expRef.current.scrollIntoView({behavior:"smooth"})
     }
   }
+  const experienceRef = useRef<HTMLDivElement | null>(null);
+
 
   return (
     <>
     <div className={`flex flex-col max-w-[97vw] px-[1%] h-[auto] ${bo} !border-yellow-500 justify-center`}>
-       <div><Header/></div>
+       <div><Header experienceRef={experienceRef} /></div>
        <div><Banner title={title} description={description}/></div>
        <div><Carousel/></div>
-       <div ref={expRef}><Experience/></div>
+       <div><Experience ref={experienceRef} /></div> {/* Pass ref to Experience */}
     </div>
     </>
     

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import headerData from '../../assets/header.json';
 import {
   HOME, ABOUT, CONTACT,
@@ -11,9 +11,11 @@ import Icons from '../../assets/Icons';
 import svgIcons from '../../assets/icons-svg/icon-image'
 import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
 import Experience from '../Experience/Experience';
+import { bo } from '../Home/Home';
 
-type Props = {};
-const bo = 'border border-solid border-white'
+type Props = {
+  experienceRef: React.RefObject<HTMLDivElement>;
+};
 
 
 export const getIcon = (iconName: string) => {
@@ -40,29 +42,38 @@ export const getHeaderComponent = (header: BaseHeaderProps) => {
   }
 };
 
-const Header = (props: Props) => {
+const Header = ({ experienceRef }: Props) => {
   const [activeTabComponent, setActiveTabComponent] = useState<string>(
     headerData.header.navigation.find((item) => item.active === 'true')?.label || HOME
   );
   const [nightMode,setNightMode] = useState(true);
+
+    // Create ref for Experience
+    const scrollToExperience = () => {
+      if (experienceRef.current) {
+        experienceRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+
   return (
     <>
-      <div className={`${bo} flex justify-center w-[full] mt-[25px] gap-6`}>
+      <div className={`${bo} fixed top-0 left-0 right-0 z-[1000] flex justify-center transform -translate-y-3 max-w-[100vw] mt-[25px] gap-6`}>
         {/* intead of opacity write alpha value  */}
-        <div className="large flex flex-[70%] bg-[#211F23]/35 gap-20 text-purple-300 max-w-[55%] h-[55px] rounded-[100px] justify-center items-center">
+        <div className={` flex flex-[70%] bg-[#211F23]/35 gap-20 text-purple-300 max-w-[55%] h-[55px] rounded-[100px] justify-center items-center`}>
           {headerData.header.navigation
             .filter((nav) => nav.active === 'true')
             .map((value, index) => (
               <button
                 key={value.id}
-                onClick={() => setActiveTabComponent(value.label)}
+                onClick={() => scrollToExperience()}
                 className={`${activeTabComponent === value.label ? 'text-white':"text-purple-300"}`}
               >
                 {value.label}
               </button>
             ))}
         </div>
-        <div className="small flex min-w-[180px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px]  justify-center items-center">
+        <div className=" small flex min-w-[180px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px]  justify-center items-center">
       {headerData.icon_header.navigation
         .filter((item) => item.active === "true")
         .map((value, index) => {
@@ -74,7 +85,7 @@ const Header = (props: Props) => {
           );
         })}
         </div>
-        <div className="small flex min-w-[80px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px]  justify-center items-center">
+        <div className=" small flex min-w-[80px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px]  justify-center items-center">
             <button onClick={()=>setNightMode(!nightMode)}>
             {nightMode ? <BsToggleOn className='text-xl bg-transparent'/>:<BsToggleOff className='text-xl bg-transparent'/>}
             </button>
@@ -88,3 +99,6 @@ const Header = (props: Props) => {
 };
 
 export default Header;
+
+//coui
+//cxmjobdetailui

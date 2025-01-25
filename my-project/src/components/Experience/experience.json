@@ -1,0 +1,74 @@
+{
+  "experience": [
+    {
+      "title": "Frontend Developer",
+      "company": "Infosys Ltd",
+      "startYear": 2022,
+      "endYear": "Present",
+      "description": [
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS."
+      ],
+      "skills": [
+        "React.js",
+        "Tailwind CSS",
+        "JavaScript",
+        "TypeScript",
+        "NextJS"
+      ],
+      "id": "1",
+      "country":"India",
+      "city":"Chandigarh",
+      "contract":"Full-Time",
+      "enable":"true"
+    },
+    {
+      "title": "UI/UX Designer",
+      "company": "Creative Studio",
+      "startYear": 2022,
+      "endYear": "Present",
+      "description": [
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS."
+      ],
+      "skills": [
+        "Figma",
+        "Adobe XD",
+        "Sketch",
+        "User Research"
+      ],
+      "id": "1",
+      "country":"India",
+      "city":"Chandigarh",
+      "contract":"Full-Time",
+      "enable":"false"
+    },
+    {
+      "title": "Web Developer Intern",
+      "company": "Startup XYZ",
+      "startYear": 2018,
+      "endYear": 2019,
+      "description": [
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
+        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS."
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "id": "3",
+      "country":"India",
+      "city":"Chandigarh",
+      "contract":"Full-Time",
+      "enable":"false"
+    }
+  ]
+}

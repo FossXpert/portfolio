@@ -18,11 +18,18 @@
                 "id":"2"
             },
             {
+                "label":"Projects",
+                "link":"/project",
+                "active":"true",
+                "isHide":"false",
+                "id":"3"
+            },
+            {
                 "label":"Contact",
                 "link":"/contact",
                 "active":"true",
                 "isHide":"false",
-                "id":"3"
+                "id":"4"
             }
         ],
         "theme":{

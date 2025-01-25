@@ -4,6 +4,7 @@ import Card from '../Cards/Card'
 import cardData from '../Cards/cardDetails.json'
 import { getIcon, getIconSvg } from '../Header/Header'
 import { useRef } from 'react'
+import { bo } from './Home'
 
 
 
@@ -13,8 +14,6 @@ import { useRef } from 'react'
 // scrollWidth → The total width of the scrollable content.
 
 type Props = {}
-const bo = 'border border-solid border-white'
-
 const Carousel = (props: Props) => {
 
   const cardContainerRef = useRef<HTMLDivElement | null>(null);
@@ -57,9 +56,9 @@ const Carousel = (props: Props) => {
           <p onClick={() => scrollLeft()} className={`text-gray-400 font-light bg-inherit text-[1rem]`}>4 Years of</p>
           <p onClick={() => scrollRight()} className={`text-white bg-inherit font-bold text-8xl`}>XP</p>
           <p className={`text-gray-400 font-light bg-inherit !border-yellow-500 text-[1rem]`}>with the most popular ecosystem frontend</p>
-        </div>
+        </div> 
       </div>
-      <div className={`${bo}carousel justify-center items-center flex flex-[3/4] flex-col w-[65%]`}>
+      <div className={`${bo} carousel justify-center items-center flex flex-[3/4] flex-col w-[65%]`}>
         <div ref={cardContainerRef} className={`${bo} flex w-full h-[auto] mt-4 overflow-x-auto p-4 gap-6`}>
           {cardData.card.map((value, index) => (
             <Card key={index} color={value.color} name={value.name} icon={getIconSvg(value.icon)} />
