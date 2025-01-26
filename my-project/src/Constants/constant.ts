@@ -1,6 +1,8 @@
 export const HOME= 'Home';
 export const ABOUT = 'About';
 export const CONTACT = 'Contact';
+export const EXPERIENCE = 'Experience';
+export const PROJECTS = 'Projects';
 
 
 //icons-list
