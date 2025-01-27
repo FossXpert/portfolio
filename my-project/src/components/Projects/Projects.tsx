@@ -23,7 +23,7 @@ const Projects = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
         <div ref={ref} className={`${bo} flex justify-center items-center text-white max-w-[100vw] h-[700px]`}>
             <div className={`${bo} relative flex w-[80vw] h-[600px] mt-[2%]`}>
                 <div className={`${bo} flex flex-col  items-center w-[30%] h-[full] bg-[#211F23]/35 rounded-[16px]`} >
-                    <img src={bannerImage} className={`${bo} bg-transparent w-[240px] h-[280px] mt-[2rem] rounded-[16px] overflow-hidden`} />
+                    <img src={"https://sprl.in/y6k8ibZ"} className={`${bo} bg-transparent w-[240px] h-[280px] mt-[2rem] rounded-[16px] overflow-hidden object-cover`} />
                     <h1 className={`${bo} w-[100%] h-[auto] bg-transparent text-[2rem] font-bold p-1 text-center text-gray-100`}>Rahul Ray </h1>
                     <p className={`${bo} w-[90%] h-[auto] bg-transparent text-[1.2rem] font-light text-center text-gray-400`}>Front-End Developer & Engineer</p>
                     <p className={`${bo} w-[90%] h-[auto] bg-transparent text-[1.2rem] font-light text-center text-gray-400`}>Varanasi, India</p>
