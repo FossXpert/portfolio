@@ -1,0 +1,55 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Portfolio Website",
+        "description": "A personal portfolio showcasing my skills, projects, and achievements.",
+        "technologies": ["React", "Tailwind CSS", "Framer Motion"],
+        "image": "https://sprl.in/y6k8ibZ",
+        "github": "https://github.com/yourusername/portfolio",
+        "liveDemo": "https://yourportfolio.com",
+        "active":"true"
+      },
+      {
+        "id": 2,
+        "title": "E-commerce Platform",
+        "description": "A full-stack e-commerce platform with product listings, cart, and checkout.",
+        "technologies": ["MERN Stack", "Redux", "Stripe API"],
+        "image": "https://sprl.in/y6k8ibZ",
+        "github": "https://github.com/yourusername/ecommerce",
+        "liveDemo": "https://yourecommerce.com",
+        "active":"true"
+      },
+      {
+        "id": 3,
+        "title": "Task Management App",
+        "description": "A productivity app for managing daily tasks and setting priorities.",
+        "technologies": ["Next.js", "Firebase", "Recoil"],
+        "image": "https://sprl.in/y6k8ibZ",
+        "github": "https://github.com/yourusername/taskmanager",
+        "liveDemo": "https://yourtaskmanager.com",
+        "active":"false"
+      },
+      {
+        "id": 4,
+        "title": "Chat Application",
+        "description": "A real-time chat application with authentication and message history.",
+        "technologies": ["React", "Socket.io", "Node.js"],
+        "image": "https://sprl.in/y6k8ibZ",
+        "github": "https://github.com/yourusername/chatapp",
+        "liveDemo": "https://yourchatapp.com",
+        "active":"false"
+      },
+      {
+        "id": 5,
+        "title": "AI Blog Generator",
+        "description": "An AI-powered blog generator that creates SEO-friendly content.",
+        "technologies": ["Next.js", "OpenAI API", "MongoDB"],
+        "image": "https://sprl.in/y6k8ibZ",
+        "github": "https://github.com/yourusername/aiblog",
+        "liveDemo": "https://youraiblog.com",
+        "active":"false"
+      }
+    ]
+  }
+  

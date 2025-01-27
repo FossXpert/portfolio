@@ -14,6 +14,7 @@ import svgIcons from '../../assets/icons-svg/icon-image'
 import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
 import Experience from '../Experience/Experience';
 import { bo } from '../Home/Home';
+import IconComponenet from './IconComponenet';
 
 type Props = {
   experienceRef: React.RefObject<HTMLDivElement>;
@@ -81,19 +82,8 @@ const Header = ({ experienceRef, projectRef }: Props) => {
               </button>
             ))}
         </div>
-        <div className=" small flex min-w-[180px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px] justify-center items-center">
-          {headerData.icon_header.navigation
-            .filter((item) => item.active === "true")
-            .map((value, index) => {
-              const IconComponent = getIcon(value.icon);
-              return (
-                <button key={index} className={``} onClick={() => window.open(value.link, "_blank")}>
-                  {IconComponent && <IconComponent className='text-xl bg-transparent' />}
-                </button>
-              );
-            })}
-        </div>
-        <div className=" small flex min-w-[80px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px]  justify-center items-center">
+        <IconComponenet/>
+        <div className=" small flex min-w-[80px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px] justify-center items-center">
           <button onClick={() => setNightMode(!nightMode)}>
             {nightMode ? <BsToggleOn className='text-xl bg-transparent' /> : <BsToggleOff className='text-xl bg-transparent' />}
           </button>

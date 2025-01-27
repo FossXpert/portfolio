@@ -3,10 +3,10 @@ import vectorImage from './Vector2.png'
 import exp from  './experience.json'
 import { LuDot } from 'react-icons/lu';
 import { GoDash } from 'react-icons/go';
+import { bo } from '../Home/Home';
 
 
 type Props = {};
-const bo = '';
 const expp = "< Here, you can know me a little more and see my whole experience as a Front-End Software Engineer >";
 
 // Forward ref to the Experience component

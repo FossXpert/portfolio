@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 import Projects from '../Projects/Projects';
 
 type Props = {}
-export const bo = 'border'
+export const bo = ''
 
 const Home = (props: Props) => {
   const title = "Hi, I’m Rahul";
@@ -24,7 +24,7 @@ const Home = (props: Props) => {
        <div><Banner title={title} description={description}/></div>
        <div><Carousel/></div>
        <div><Experience ref={experienceRef} /></div> {/* Pass ref to Experience */}
-       <div><Projects ref={projectRef}/></div>
+       <div><Projects ref={projectRef} technologies={[]}/></div>
     </div>
     </>
     
