@@ -10,7 +10,7 @@ export interface IContact {
   }
   
   // Schema Validation using Zod
-  const contactMeSchema = z.object({
+  export const contactMeSchema = z.object({
     name: z.string().min(1, { message: `Name must not be empty` }),
     email: z.string().email({ message: `Invalid Email` }),
     message: z
@@ -28,5 +28,5 @@ export interface IContact {
     { timestamps: true }
   );
 
-const courseModel: Model<IContact> = mongoose.model('portfolio', contactSchema);
-export default courseModel;
+const contactModel: Model<IContact> = mongoose.model('portfolio', contactSchema);
+export default contactModel;
