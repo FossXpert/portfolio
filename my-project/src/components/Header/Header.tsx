@@ -7,8 +7,7 @@ import {
   PROJECTS
 } from '../../Constants/constant';
 import { BaseHeaderProps } from '@/models/models';
-import About from '../About';
-import Contact from '../Contact';
+
 import Icons from '../../assets/Icons';
 import svgIcons from '../../assets/icons-svg/icon-image'
 import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
@@ -44,7 +43,7 @@ export const getHeaderComponent = (header: BaseHeaderProps) => {
     case ABOUT:
       return <Experience />;
     case CONTACT:
-      return <Contact />;
+      return null;
   }
 };
 
