@@ -4,6 +4,7 @@ import Carousel from './Carousel';
 import Experience from '../Experience/Experience';
 import Header from '../Header/Header';
 import Projects from '../Projects/Projects';
+import Contactme from '../Contactme/Contactme';
 
 type Props = {}
 export const bo = ''
@@ -15,16 +16,20 @@ const Home = (props: Props) => {
   //All useref hooks
   const experienceRef = useRef<HTMLDivElement | null>(null);
   const projectRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
+  const homeRef = useRef<HTMLDivElement | null>(null);
+
 
   
   return (
     <>
-    <div className={`flex flex-col max-w-[97vw] px-[1%] h-[auto] ${bo} !border-yellow-500 justify-center`}>
-       <div><Header experienceRef={experienceRef} projectRef={projectRef} /></div>
+    <div ref={homeRef} className={`flex flex-col max-w-[97vw] px-[1%] h-[auto] ${bo} !border-yellow-500 justify-center`}>
+       <div><Header experienceRef={experienceRef} projectRef={projectRef} contactRef={contactRef} homeRef={homeRef} /></div>
        <div><Banner title={title} description={description}/></div>
        <div><Carousel/></div>
        <div><Experience ref={experienceRef} /></div> {/* Pass ref to Experience */}
        <div><Projects ref={projectRef} technologies={[]}/></div>
+       <div><Contactme ref={contactRef}/></div>
     </div>
     </>
     

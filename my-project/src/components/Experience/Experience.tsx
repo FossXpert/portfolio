@@ -12,8 +12,8 @@ const expp = "< Here, you can know me a little more and see my whole experience 
 // Forward ref to the Experience component
 const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
   return (
-    <div ref={ref} className={`${bo} justify-start items-center text-white flex flex-col max-w-[100vw] h-[auto]`}>
-      <div className={`${bo} relative items-center flex flex-col w-[auto] h-[300px] mt-[2%] gap-8`}>
+    <div ref={ref} className={`${bo} justify-start items-center text-white flex flex-col max-w-[100vw] min-h-screen `}>
+      <div className={`${bo} relative items-center justify-center flex flex-col w-[auto] h-[300px] gap-8 mt-8 `}>
         <img className={`${bo} w-[100%] bg-transparent absolute h-[100%]`} src={vectorImage} alt='vector'/>
         <p className={`${bo} text-center text-gray-400 p-2 font-light leading-[48px] text-[1.5rem] w-[616px] h-[96px]`}>{expp}</p>
         <button className={`w-[184px] h-[46px] text-gray-900 bg-white rounded-full`}>Download CV</button>

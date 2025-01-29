@@ -19,6 +19,8 @@ import IconComponenet from './IconComponenet';
 type Props = {
   experienceRef: React.RefObject<HTMLDivElement>;
   projectRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
+  homeRef: React.RefObject<HTMLDivElement>;
 };
 
 
@@ -47,7 +49,7 @@ export const getHeaderComponent = (header: BaseHeaderProps) => {
 };
 
 
-const Header = ({ experienceRef, projectRef }: Props) => {
+const Header = ({ experienceRef, projectRef,contactRef, homeRef }: Props) => {
   const [activeTabComponent, setActiveTabComponent] = useState<string>(
     headerData.header.navigation.find((item) => item.active === 'true')?.label || HOME
   );
@@ -56,11 +58,13 @@ const Header = ({ experienceRef, projectRef }: Props) => {
   const scrollToComponent = (label: string) => {
     switch (label) {
       case HOME:
-        return null;
+        return homeRef.current ? homeRef.current.scrollIntoView({ behavior: 'smooth' }) : null;
       case EXPERIENCE:
         return experienceRef.current ? experienceRef.current.scrollIntoView({ behavior: 'smooth' }) : null;
       case PROJECTS:
         return projectRef.current ? projectRef.current.scrollIntoView({ behavior: 'smooth' }) : null;
+      case CONTACT:
+        return contactRef.current ? contactRef.current.scrollIntoView({ behavior: 'smooth' }) : null;
     }
   }
 
