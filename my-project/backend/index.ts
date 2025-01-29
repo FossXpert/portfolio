@@ -2,13 +2,15 @@
 import express from 'express';
 import cors from 'cors';
 import connectDB from './utill/db';
-const PORT = 5000;
+const PORT = process.env.PORT || 9000;
 
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:5173"], // Add your frontend URL here
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    origin: ["http://localhost:5173",
+        "https://9000-idx-portfoliogit-1738151759195.cluster-bec2e4635ng44w7ed22sa22hes.cloudworkstations.dev/?monospaceUid=30318&embedded=0",
+        "https://sprl.in/Rahul-Portfolio"], // Add your frontend URL here
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
 app.listen(process.env.PORT, () => {
