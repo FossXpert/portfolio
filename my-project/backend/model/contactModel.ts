@@ -19,7 +19,7 @@ export interface IContact {
       .max(500, { message: `Only up to 500 characters supported` }),
   });
 //   type IContact = z.infer<typeof contactMeSchema>;
-  const contactSchema = new Schema<IContact & Document>(
+  const contactSchema = new Schema<IContact >(
     {
       name: { type: String, required: true, trim: true },
       email: { type: String, required: true, trim: true, lowercase: true },
@@ -28,5 +28,5 @@ export interface IContact {
     { timestamps: true }
   );
 
-  const courseModel: Model<IContact> = mongoose.model('portfolio', contactSchema);
+const courseModel: Model<IContact> = mongoose.model('portfolio', contactSchema);
 export default courseModel;
