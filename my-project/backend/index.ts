@@ -1,9 +1,7 @@
 
 import express from 'express';
 import cors from 'cors';
-
-
-
+import connectDB from './utill/db';
 const PORT = 5000;
 
 const app = express();
@@ -13,6 +11,10 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 
     credentials: true,
 }));
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
+    connectDB();
+})
 
 
 
