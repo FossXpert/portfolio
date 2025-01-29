@@ -67,8 +67,8 @@ const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
                 value={contactFormik.values.name}
                 onChange={contactFormik.handleChange}
                 onBlur={contactFormik.handleBlur}
-                className={`flex p-3 bg-[#211F23]/35 text-white rounded-lg focus:outline-none focus:ring-2 ${
-                  contactFormik.touched.name && contactFormik.errors.name ? "ring-2 ring-red-500" : "focus:ring-gray-500"
+                className={`flex p-3 bg-[#211F23]/35 text-white rounded-lg focus:outline-none focus:ring-1 ${
+                  contactFormik.touched.name && contactFormik.errors.name ? "ring-1 ring-red-500" : "focus:ring-purple-500"
                 }`}
                 placeholder="Your Name"
               />
@@ -85,8 +85,8 @@ const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
                 value={contactFormik.values.email}
                 onChange={contactFormik.handleChange}
                 onBlur={contactFormik.handleBlur}
-                className={`flex p-3 bg-[#211F23]/35 text-white rounded-lg focus:outline-none focus:ring-2 ${
-                  contactFormik.touched.email && contactFormik.errors.email ? "border-red-500" : "focus:ring-gray-500"
+                className={`flex p-3 bg-[#211F23]/35 text-white rounded-lg focus:outline-none focus:ring-1 ${
+                  contactFormik.touched.email && contactFormik.errors.email ? "ring-1 ring-red-500" : "focus:ring-purple-500"
                 }`}
                 placeholder="Your@email.com"
               />
@@ -104,8 +104,8 @@ const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
               onChange={contactFormik.handleChange}
               onBlur={contactFormik.handleBlur}
               rows={5}
-              className={`flex p-3 bg-[#211F23]/35 text-white rounded-lg focus:outline-none focus:ring-2 ${
-                contactFormik.touched.message && contactFormik.errors.message ? "border-red-500" : "focus:ring-gray-500"
+              className={`flex p-3 bg-[#211F23]/35 text-white rounded-lg focus:outline-none focus:ring-1 ${
+                contactFormik.touched.message && contactFormik.errors.message ? "ring-1 ring-red-500" : "focus:ring-purple-500"
               }`}
               placeholder="Message"
             ></textarea>
