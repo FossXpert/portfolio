@@ -11,6 +11,7 @@ app.use(cors({
     origin: ["http://localhost:5173",
         "https://9000-idx-portfoliogit-1738151759195.cluster-bec2e4635ng44w7ed22sa22hes.cloudworkstations.dev/?monospaceUid=30318&embedded=0",
         "https://sprl.in/Rahul-Portfolio",
+        "https://portfolio-nine-hazel-11.vercel.app",
         "https://9000-idx-portfoliogit-1738151759195.cluster-bec2e4635ng44w7ed22sa22hes.cloudworkstations.dev"
     ], // Add your frontend URL here
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
