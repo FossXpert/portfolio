@@ -25,7 +25,7 @@ type Props = {};
       message: "",
     },
     validationSchema: toFormikValidationSchema(contactMeSchema), // Here I am converting zod schema to formik validator, there is alos an oanother way see loginmodal in frontend-me code
-    onSubmit: async (values) => {
+    onSubmit: async (values, { resetForm }) => {
       try {
         const response = await fetch(`http://localhost:5000/api/getcontactForm`, {
           method: "POST",
@@ -36,7 +36,8 @@ type Props = {};
         });
 
         if (response.ok) {
-          alert("Message sent successfully!"); // Reset the form after successful submission
+          alert("Message sent successfully!");
+          resetForm(); // Reset the form after successful submission
         } else {
           alert("Error sending message. Please try again.");
         }
