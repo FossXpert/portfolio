@@ -2,6 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import connectDB from './utill/db';
+import { contactController } from './controller/contactController';
 const PORT = process.env.PORT || 9000;
 
 const app = express();
@@ -13,6 +14,9 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
+
+app.use('/getcontactForm', contactController);
+
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`);
     connectDB();

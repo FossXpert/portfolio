@@ -11,7 +11,7 @@ export const contactController = async (req:Request,res:Response) => {
         await newContact.save();
         res.status(201).json({ message: "Message sent successfully!" });
         
-    } catch (error) {
+    } catch (error:any) {
         res.status(400).json({ error: error.errors || "Invalid data" });
 
     }
