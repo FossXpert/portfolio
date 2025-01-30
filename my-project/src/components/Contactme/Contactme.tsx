@@ -5,8 +5,7 @@ import { useFormik } from "formik";
 import { toFormikValidationSchema } from "zod-formik-adapter";
 
 type Props = {};
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
-const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
+ const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
   
   // Schema Validation using Zod
   const contactMeSchema = z.object({
@@ -26,9 +25,9 @@ const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
       message: "",
     },
     validationSchema: toFormikValidationSchema(contactMeSchema), // Here I am converting zod schema to formik validator, there is alos an oanother way see loginmodal in frontend-me code
-    onSubmit: async (values, { resetForm }) => {
+    onSubmit: async (values) => {
       try {
-        const response = await fetch(`${API_BASE_URL}/api/getcontactForm`, {
+        const response = await fetch(`http://localhost:5000/api/getcontactForm`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -37,8 +36,7 @@ const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
         });
 
         if (response.ok) {
-          alert("Message sent successfully!");
-          resetForm(); // Reset the form after successful submission
+          alert("Message sent successfully!"); // Reset the form after successful submission
         } else {
           alert("Error sending message. Please try again.");
         }
