@@ -7,7 +7,7 @@ import Projects from '../Projects/Projects';
 import Contactme from '../Contactme/Contactme';
 
 type Props = {}
-export const bo = ''
+export const bo = 'border'
 
 const Home = (props: Props) => {
   const title = "Hi, I’m Rahul";

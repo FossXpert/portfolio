@@ -2,7 +2,6 @@ import React, { forwardRef } from "react";
 import { bo } from "../Home/Home";
 import { z } from "zod";
 import { useFormik } from "formik";
-import { toFormikValidationSchema } from "zod-formik-adapter";
 
 type Props = {};
  const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
@@ -24,7 +23,14 @@ type Props = {};
       email: "",
       message: "",
     },
-    validationSchema: toFormikValidationSchema(contactMeSchema), // Here I am converting zod schema to formik validator, there is alos an oanother way see loginmodal in frontend-me code
+    validate: (values) => {
+      try {
+        contactMeSchema.parse(values);
+        return {};
+      } catch (e: any) {
+        return e.formErrors.fieldErrors;
+      }
+    }, // Here I am converting zod schema to formik validator, there is alos an oanother way see loginmodal in frontend-me code
     onSubmit: async (values, { resetForm }) => {
       try {
         const response = await fetch(`http://localhost:5000/api/getcontactForm`, {
