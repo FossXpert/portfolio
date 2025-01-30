@@ -15,7 +15,7 @@ app.use(cors({
     credentials: true,
 }));
 
-app.use('/getcontactForm', contactController);
+app.use('/api/getcontactForm', contactController);
 
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`);
