@@ -9,7 +9,7 @@ type Props = {
 }
 const downloadPdf = () => {
   const link = document.createElement("a");
-  link.href = "../../assets/Ravi_1.pdf"; // Path to the PDF in the public folder
+  link.href = "../../../public/Ravi_1.pdf"; // Path to the PDF in the public folder
   link.download = "Resume.pdf";
   document.body.appendChild(link);
   link.click();
