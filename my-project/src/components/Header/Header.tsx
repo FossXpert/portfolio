@@ -71,7 +71,7 @@ const Header = ({ experienceRef, projectRef,contactRef, homeRef }: Props) => {
 
   return (
     <>
-      <div className={`${bo} bg-transparent fixed top-0 left-0 right-0 z-[1000] flex justify-center transform  w-[auto] gap-6`}>
+      <div className={`${bo} bg-transparent fixed top-2 left-0 right-0 z-[1000] flex justify-center transform  w-[auto] gap-6`}>
         <div className={` flex flex-[70%] bg-[#211F23]/35 backdrop-blur-lg gap-20 text-purple-300 max-w-[55%] h-[55px] rounded-[100px] justify-center items-center`}>
           {headerData.header.navigation
             .filter((nav) => nav.active === 'true')
