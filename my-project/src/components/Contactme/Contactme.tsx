@@ -33,7 +33,7 @@ type Props = {};
     }, // Here I am converting zod schema to formik validator, there is alos an oanother way see loginmodal in frontend-me code
     onSubmit: async (values, { resetForm }) => {
       try {
-        const response = await fetch(`https://loss-lucas-creations-ping.trycloudflare.com/api/getcontactForm`, {
+        const response = await fetch(`https://range-crop-signal-argued.trycloudflare.com/api/getcontactForm`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
