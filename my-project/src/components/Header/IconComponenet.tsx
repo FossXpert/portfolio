@@ -9,8 +9,8 @@ type Props = {
 
 const IconComponenet = (props: Props) => {
   return (
-    <div>
-        <div className={`small flex min-w-[180px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px] justify-center items-center ${props.className}`}>
+    <div className='bg-transparent'>
+        <div className={`small flex min-w-[180px] !bg-[#211F23]/35 h-[55px] gap-8  text-purple-300 rounded-[100px] justify-center items-center ${props.className}`}>
           {headerData.icon_header.navigation
             .filter((item) => item.active === "true")
             .map((value, index) => {

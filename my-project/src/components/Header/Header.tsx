@@ -71,8 +71,8 @@ const Header = ({ experienceRef, projectRef,contactRef, homeRef }: Props) => {
 
   return (
     <>
-      <div className={`${bo} fixed top-0 left-0 right-0 z-[1000] flex justify-center transform -translate-y-3 max-w-[100vw] mt-[25px] gap-6`}>
-        <div className={` flex flex-[70%] bg-[#211F23]/35 gap-20 text-purple-300 max-w-[55%] h-[55px] rounded-[100px] justify-center items-center`}>
+      <div className={`${bo} bg-transparent fixed top-0 left-0 right-0 z-[1000] flex justify-center transform  w-[auto] gap-6`}>
+        <div className={` flex flex-[70%] bg-[#211F23]/35 backdrop-blur-lg gap-20 text-purple-300 max-w-[55%] h-[55px] rounded-[100px] justify-center items-center`}>
           {headerData.header.navigation
             .filter((nav) => nav.active === 'true')
             .map((value, index) => (
@@ -85,8 +85,8 @@ const Header = ({ experienceRef, projectRef,contactRef, homeRef }: Props) => {
               </button>
             ))}
         </div>
-        <IconComponenet/>
-        <div className=" small flex min-w-[80px] h-[55px] gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px] justify-center items-center">
+        <IconComponenet className='backdrop-blur-lg !bg-gradient-to-r from-purple-900 to-purple-500 !text-white'/>
+        <div className=" small flex min-w-[80px] h-[55px] backdrop-blur-lg gap-8 bg-[#211F23]/35 text-purple-300 rounded-[100px] justify-center items-center">
           <button onClick={() => setNightMode(!nightMode)}>
             {nightMode ? <BsToggleOn className='text-xl bg-transparent' /> : <BsToggleOff className='text-xl bg-transparent' />}
           </button>
