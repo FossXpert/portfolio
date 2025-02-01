@@ -15,7 +15,7 @@ type ProjectProps = {
 const ProjectCard: React.FC<ProjectProps> = ({ title, description, technologies, image, github, liveDemo }) => {
   return (
     <div className="w-[350px] h-[450px] bg-purple-700 rounded-2xl p-2 shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-      <img src={image} alt={title} className="w-full h-[60%] object-cover rounded-t-xl" />
+      <video src={image} className="w-full h-[60%] object-cover rounded-t-xl" autoPlay loop muted />
       
       <div className="p-4 flex flex-col justify-between h-[40%] rounded-b-xl">
         <h3 className="text-xl font-semibold text-purple-400">{title}</h3>

@@ -5,7 +5,7 @@
         "title": "Portfolio Website",
         "description": "A personal portfolio showcasing my skills, projects, and achievements.",
         "technologies": ["React", "Tailwind CSS", "Framer Motion"],
-        "image": "https://sprl.in/y6k8ibZ",
+        "image": "../../../public/portfolio.mp4",
         "github": "https://github.com/yourusername/portfolio",
         "liveDemo": "https://yourportfolio.com",
         "active":"true"

@@ -79,7 +79,7 @@ const Header = ({ experienceRef, projectRef,contactRef, homeRef }: Props) => {
               <button
                 key={index}
                 onClick={() => scrollToComponent(value.label)}
-                className={`${activeTabComponent === value.label ? 'text-white' : "text-purple-300"}`}
+                className={`text-purple-300`}
               >
                 {value.label}
               </button>
