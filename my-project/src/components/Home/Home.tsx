@@ -8,7 +8,7 @@ import Contactme from '../Contactme/Contactme';
 import { Analytics } from "@vercel/analytics/react"
 
 type Props = {}
-export const bo = ""
+export const bo = 'border'
 
 const Home = (props: Props) => {
   <Analytics />
@@ -25,7 +25,7 @@ const Home = (props: Props) => {
   
   return (
     <>
-    <div ref={homeRef} className={`flex flex-col max-w-[97vw] px-[1%] h-[auto] ${bo} !border-yellow-500 justify-center`}>
+    <div ref={homeRef} className={`flex flex-col max-w-[99vw] px-[1%] h-[auto] ${bo} !border-yellow-500 justify-center`}>
        <div><Header experienceRef={experienceRef} projectRef={projectRef} contactRef={contactRef} homeRef={homeRef} /></div>
        <div><Banner title={title} description={description}/></div>
        <div><Carousel/></div>
