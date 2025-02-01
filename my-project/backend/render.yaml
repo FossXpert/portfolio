@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-node-backend
+    runtime: node
+    plan: free  # Change to 'starter' or 'pro' for more resources
+    buildCommand: npm install
+    startCommand: node index.js  # Change this if your entry file is different
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
