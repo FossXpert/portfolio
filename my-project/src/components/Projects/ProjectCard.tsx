@@ -16,9 +16,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, technologies,
   return (
     <div className={`${bo} w-[350px] h-[450px] bg-purple-700 rounded-2xl p-2 shadow-lg overflow-hidden transition-transform transform hover:scale-105`}>
       <div className={`h-[60%] object-cover`}>
-        {image ? <iframe className={`w-[100%] h-[100%] object-cover bg-black`}
-          src={`${image}?controls=0&autoplay=1&loop=1`}>
-        </iframe>: <img src={bannerImage} alt="banner" className={`w-[100%] h-[100%] object-cover`} />}
+       <img src={image} alt="banner" className={`w-[100%] h-[100%] object-cover`}/>
       </div>
       <div className={`p-4 flex flex-col justify-between h-[40%] rounded-b-xl`}>
         <h3 className={`text-xl font-semibold text-purple-400`}>{title}</h3>

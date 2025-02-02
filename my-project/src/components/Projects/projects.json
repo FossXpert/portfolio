@@ -5,7 +5,7 @@
         "title": "Portfolio Website",
         "description": "A personal portfolio showcasing my skills, projects, and achievements.",
         "technologies": ["React", "Tailwind CSS", "Framer Motion"],
-        "image": "https://player.vimeo.com/video/1052766134",
+        "image": "../../../public/gifmaker_me.gif",
         "github": "",
         "liveDemo": "https://yourportfolio.com",
         "active":"true"
@@ -15,7 +15,7 @@
         "title": "E-commerce Platform",
         "description": "A full-stack e-commerce platform with product listings, cart, and checkout.",
         "technologies": ["MERN Stack", "Redux", "Stripe API"],
-        "image": "",
+        "image": "../../../public/gifmaker_me.gif",
         "github": "https://github.com/yourusername/ecommerce",
         "liveDemo": "https://yourecommerce.com",
         "active":"true"
