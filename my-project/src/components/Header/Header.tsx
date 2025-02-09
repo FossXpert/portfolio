@@ -14,6 +14,7 @@ import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
 import Experience from '../Experience/Experience';
 import { bo } from '../Home/Home';
 import IconComponenet from './IconComponenet';
+import useIsMobile from '../../redux/features/hook/useIsMobile'
 
 type Props = {
   experienceRef: React.RefObject<HTMLDivElement>;
@@ -67,6 +68,9 @@ const Header = ({ experienceRef, projectRef,contactRef, homeRef }: Props) => {
     }
   }
 
+  const {isMobile,isTablet} = useIsMobile();
+  console.log("isMobile",isMobile);
+  console.log("isTablet",isTablet);
 
 
   return (
@@ -81,7 +85,7 @@ const Header = ({ experienceRef, projectRef,contactRef, homeRef }: Props) => {
                 onClick={() => scrollToComponent(value.label)}
                 className={`text-purple-300`}
               >
-                {value.label}
+                {}
               </button>
             ))}
         </div>
