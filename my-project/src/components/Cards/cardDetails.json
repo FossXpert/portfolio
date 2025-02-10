@@ -1,40 +1,46 @@
 {
-    "card":[
+    "card": [
         {
-            "name":"JavaScript",
-            "icon":"jsIcon",
-            "color":"#C3C99E"
+            "name": "JavaScript",
+            "icon": "jsIcon",
+            "color": "#C3C99E",
+            "active": true
         },
         {
-            "name":"React",
-            "icon":"reactIcon",
-            "color":"#7D9CA5"
+            "name": "React",
+            "icon": "reactIcon",
+            "color": "#7D9CA5",
+            "active": true
         },
         {
-            "name":"NextJS",
-            "icon":"nextjsIcon",
-            "color":"#C2C2C2"
+            "name": "NextJS",
+            "icon": "nextjsIcon",
+            "color": "#C2C2C2",
+            "active": true
         },
         {
-            "name":"NextJS",
-            "icon":"nextjsIcon",
-            "color":"#C2C2C2"
+            "name": "NextJS",
+            "icon": "nextjsIcon",
+            "color": "#C2C2C2",
+            "active": true
         },
         {
-            "name":"NextJS",
-            "icon":"nextjsIcon",
-            "color":"#C2C2C2"
+            "name": "NextJS",
+            "icon": "nextjsIcon",
+            "color": "#C2C2C2",
+            "active": true
         },
         {
-            "name":"NextJS",
-            "icon":"nextjsIcon",
-            "color":"#C2C2C2"
+            "name": "NextJS",
+            "icon": "nextjsIcon",
+            "color": "#C2C2C2",
+            "active": true
         },
         {
-            "name":"NextJS",
-            "icon":"nextjsIcon",
-            "color":"#C2C2C2"
+            "name": "NextJS",
+            "icon": "nextjsIcon",
+            "color": "#C2C2C2",
+            "active": true
         }
-        
     ]
 }

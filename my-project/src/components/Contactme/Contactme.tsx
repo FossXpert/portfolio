@@ -60,6 +60,7 @@ type Props = {};
         <h2 className={`text-5xl font-extrabold text-white text-center`}>
           LET'S WORK <span className={`block text-purple-600`}>TOGETHER</span>
         </h2>
+        
 
         <form onSubmit={contactFormik.handleSubmit} className={`flex flex-col mt-8 gap-6`}>
 

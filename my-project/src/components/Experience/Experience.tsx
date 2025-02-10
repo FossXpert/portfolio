@@ -4,25 +4,27 @@ import exp from  './experience.json'
 import { LuDot } from 'react-icons/lu';
 import { GoDash } from 'react-icons/go';
 import { bo } from '../Home/Home';
+import { downloadPdf } from '../../Utills/utill';
 
 
 type Props = {};
-const expp = "< Here, you can know me a little more and see my whole experience as a Front-End Software Engineer >";
+const expp = "Here, you can know me a little more and see my whole experience as a Front-End Software Engineer";
 
 // Forward ref to the Experience component
 const Experience = forwardRef<HTMLDivElement>((props: Props, ref) => {
+  
   return (
     <div ref={ref} className={`${bo} justify-start items-center text-white flex flex-col max-w-[100vw] min-h-screen `}>
       <div className={`${bo} relative items-center justify-center flex flex-col w-[auto] h-[300px] gap-8 mt-8 `}>
         <img className={`${bo} w-[100%] bg-transparent absolute h-[100%]`} src={vectorImage} alt='vector'/>
-        <p className={`${bo} text-center text-gray-400 p-2 font-light leading-[48px] text-[1.5rem] w-[616px] h-[96px]`}>{expp}</p>
-        <button className={`w-[184px] h-[46px] text-gray-900 bg-white rounded-full`}>Download CV</button>
+        <p className={`${bo} text-center text-gray-400 p-2 font-light leading-[40px] lg:leading-[48px] text-[1.3rem] lg:text-[1.5rem] w-[98%] lg:w-[616px] h-[auto] lg:h-[96px]`}>{expp}</p>
+        <button onClick={()=>downloadPdf()} className={` absolute border border-solid border-[#A60683] mt-[14rem] lg:mt-0 lg:relative w-[10rem]  lg:w-[184px] h-[46px] lg:h-[46px] text-gray-900 bg-white rounded-full`}>Download CV</button>
       </div>
-      <div className={`${bo} flex flex-col justify-center items-center w-[80vw] h-[full]`}>
+      <div className={`${bo} flex flex-col justify-center items-center w-[88vw] lg:w-[80vw] h-[full]`}>
         {
           exp.experience.filter((item) => item.enable === 'true').map((value,index) => (
             <div key={index} className={`${bo} justify-center items-center !border-red-600 flex w-[100%] h-[390px] rounded-[60px]`}>
-            <div className={`${bo} flex w-[90%] h-[90%]`}>
+            <div className={`${bo} flex w-[100%] lg:w-[90%] h-[90%]`}>
                 <div className={`${bo} w-[40%] h-[100%]`}>
                   <div className={`${bo} w-[100%] h-[40%]`}>
                     <h1 className={`${bo} font-semibold text-[22px]`}>{value.title}</h1>

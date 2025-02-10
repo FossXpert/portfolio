@@ -6,9 +6,10 @@ import Header from '../Header/Header';
 import Projects from '../Projects/Projects';
 import Contactme from '../Contactme/Contactme';
 import { Analytics } from "@vercel/analytics/react"
+import { downloadPdf } from '../../Utills/utill';
 
 type Props = {}
-export const bo = 'border'
+export const bo = ''
 
 const Home = (props: Props) => {
   <Analytics />
@@ -32,6 +33,7 @@ const Home = (props: Props) => {
        <div><Experience ref={experienceRef} /></div> {/* Pass ref to Experience */}
        <div><Projects ref={projectRef} technologies={[]}/></div>
        <div><Contactme ref={contactRef}/></div>
+       
     </div>
     </>
     
