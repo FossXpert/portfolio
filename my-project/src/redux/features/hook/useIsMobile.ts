@@ -6,15 +6,17 @@ const useIsMobile = () => {
     const dispatch = useDispatch();
     
     // Define the expected Redux state type
-    const { isMobile, isTablet } = useSelector((state:any) => state.screen);
+    const { isMobile,isDesktop,sSize,currPxl } = useSelector((state:any) => state.screen);
 
     useEffect(() => {
         const handleResize = () => {
             const width = window.innerWidth;
             const screenSize = {
-                sSize: width <= 600 ? "mobile" : width <= 1024 ? "tablet" : "desktop",
-                isMobile: width <= 600,
-                isTablet: width > 600 && width <= 1024
+                currPxl:width,
+                sSize: width <= 767 ? "mobile" : "desktop",
+                isMobile: width <= 767,
+                // isTablet: width > 640 && width <= 1024,
+                isDesktop:width>=768
             };
             dispatch(setScreen(screenSize)); // Pass an object, not just a string
         };
@@ -24,7 +26,7 @@ const useIsMobile = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, [dispatch]);
 
-    return { isMobile, isTablet };
+    return { isMobile, isDesktop ,sSize,currPxl};
 };
 
 export default useIsMobile;

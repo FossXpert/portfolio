@@ -10,14 +10,14 @@ type Props = {
 const IconComponenet = (props: Props) => {
   return (
     <div className='bg-transparent'>
-        <div className={`small flex min-w-[180px] !bg-[#211F23]/35 h-[55px] gap-8  text-purple-300 rounded-[100px] justify-center items-center ${props.className}`}>
+        <div className={`small flex min-w-[8rem] lg:min-w-[11rem] !bg-[#211F23]/35  lg:h-[55px] h-[45px] gap-[1rem] lg:gap-8 text-purple-300 rounded-[100px] justify-center items-center ${props.className}`}>
           {headerData.icon_header.navigation
             .filter((item) => item.active === "true")
             .map((value, index) => {
               const IconComponent = getIcon(value.icon);
               return (
                 <button key={index} className={``} onClick={() => window.open(value.link, "_blank")}>
-                  {IconComponent && <IconComponent className='text-xl bg-transparent' />}
+                  {IconComponent && <IconComponent className='lg:text-xl bg-transparent' />}
                 </button>
               );
             })}

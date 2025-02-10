@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      lg: '768px',
+    },
     extend: {
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'], // Add Raleway font
