@@ -20,8 +20,6 @@ const Home = (props: Props) => {
   const projectRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
   const homeRef = useRef<HTMLDivElement | null>(null);
-
-
   
   return (
     <>
@@ -32,7 +30,6 @@ const Home = (props: Props) => {
        <div><Experience ref={experienceRef} /></div> {/* Pass ref to Experience */}
        <div><Projects ref={projectRef} technologies={[]}/></div>
        <div><Contactme ref={contactRef}/></div>
-       
     </div>
     </>
     
