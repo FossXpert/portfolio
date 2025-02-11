@@ -27,7 +27,7 @@
             {
                 "label":"Contact",
                 "link":"/contact",
-                "active":"false",
+                "active":"true",
                 "isHide":"false",
                 "id":"4"
             }

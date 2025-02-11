@@ -83,7 +83,6 @@ const Header = ({ experienceRef, projectRef, contactRef, homeRef }: Props) => {
                 onClick={() => scrollToComponent(value.label)}
                 className={`text-purple-300`}
               >
-                {/* {currPxl + sSize} */}
                 {value.label}
               </button>
             ))}
