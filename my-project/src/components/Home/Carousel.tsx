@@ -70,8 +70,11 @@ const Carousel = (props: Props) => {
             <Card key={index} color={value.color} name={value.name} icon={getIconSvg(value.icon)} />
           ))}
         </div>
-        <div className={`${bo} w-[20%] h-[15px]`}>
-        </div>
+        <div className={`${ bo} flex items-center w-[auto] h-[15px]`}>
+        {cardData.card.filter((item)=>item.active === true).map((value,index)=>(
+            <GoDotFill key={index} className={`text-gray-300 text-xl bg-transparent `}/>
+        ))}
+      </div>
       </div>
     </div>}
     {isMobile &&
