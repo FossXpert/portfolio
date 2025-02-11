@@ -59,7 +59,7 @@ const Carousel = (props: Props) => {
       <div className={`${bo} relative flex w-[35%]`}>
         <img className={`w-[100%] h-[100%]`} src={vectorImage} alt='vector' />
         <div className={`flex flex-col absolute bg-transparent opacity-100 top-1/2 left-0 transform translate-x-1/2 translate-y-[-50%] w-[250px] h-[175px]`}>
-          <p onClick={() => scrollLeft()} className={`text-gray-400 font-light bg-inherit text-[1rem]`}>4 Years of</p>
+          <p onClick={() => scrollLeft()} className={`text-gray-400 font-light bg-inherit text-[1rem]`}>3 Years of</p>
           <p onClick={() => scrollRight()} className={`text-white bg-inherit font-bold text-8xl`}>XP</p>
           <p className={`text-gray-400 font-light bg-inherit !border-yellow-500 text-[1rem]`}>with the most popular ecosystem frontend</p>
         </div> 
@@ -79,7 +79,7 @@ const Carousel = (props: Props) => {
     <div className={`${bo} relative flex w-[full] justify-center`}>
       <img className={`h-[20rem]`} src={vectorImage} alt='vector' />
       <div className={` ${bo} flex flex-col absolute bg-transparent opacity-100 text-xl top-[20%] w-[250px] h-[175px] `}>
-        <p className={`text-gray-400 font-light bg-inherit text-[1rem]`}>4 Years of</p>
+        <p className={`text-gray-400 font-light bg-inherit text-[1rem]`}>3 Years of</p>
         <p className={`text-white bg-inherit font-bold text-8xl`}>XP</p>
         <p className={`text-gray-400 font-light bg-inherit !border-yellow-500 text-[1rem]`}>with the most popular ecosystem frontend</p>
       </div> 

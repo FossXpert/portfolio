@@ -6,7 +6,6 @@ import Header from '../Header/Header';
 import Projects from '../Projects/Projects';
 import Contactme from '../Contactme/Contactme';
 import { Analytics } from "@vercel/analytics/react"
-import { downloadPdf } from '../../Utills/utill';
 
 type Props = {}
 export const bo = ''
@@ -14,7 +13,7 @@ export const bo = ''
 const Home = (props: Props) => {
   <Analytics />
   const title = "Hi, I’m Rahul";
-  const description = "During these 2 years as Front-End Software Engineer. My role has extended beyond coding to effective communication with various departments, to define new features and spearheading the development of new apps";
+  const description = "During these 3 years as Front-End Software Engineer. My role has extended beyond coding to effective communication with various departments, to define new features and spearheading the development of new apps";
   
   //All useref hooks
   const experienceRef = useRef<HTMLDivElement | null>(null);
