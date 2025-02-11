@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(cors({
     origin: ["http://localhost:5173",
         "https://portfolio-nine-hazel-11.vercel.app",
+        "http://100.93.3.137:5173/"
     ], // Add your frontend URL here
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
