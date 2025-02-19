@@ -66,7 +66,7 @@ const Carousel = (props: Props) => {
       </div>
       <div className={`${bo} carousel justify-center items-center flex flex-[3/4] flex-col w-[65%]`}>
         <div ref={cardContainerRef} className={`${bo} flex w-full h-[auto] mt-4 overflow-x-auto p-4 gap-6`}>
-          {cardData.card.map((value, index) => (
+          {cardData.card.filter((item)=>item.active === true).map((value, index) => (
             <Card key={index} color={value.color} name={value.name} icon={getIconSvg(value.icon)} />
           ))}
         </div>
