@@ -22,25 +22,25 @@
             "name": "NextJS",
             "icon": "nextjsIcon",
             "color": "#C2C2C2",
-            "active": true
+            "active": false
         },
         {
             "name": "NextJS",
             "icon": "nextjsIcon",
             "color": "#C2C2C2",
-            "active": true
+            "active": false
         },
         {
             "name": "NextJS",
             "icon": "nextjsIcon",
             "color": "#C2C2C2",
-            "active": true
+            "active": false
         },
         {
             "name": "NextJS",
             "icon": "nextjsIcon",
             "color": "#C2C2C2",
-            "active": true
+            "active": false
         }
     ]
 }
