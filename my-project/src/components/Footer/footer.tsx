@@ -8,7 +8,7 @@ const Footer = () => {
         
         {/* Contact Info */}
         <div>
-          <div className="flex items-center gap-2 lg:gap-8 mt-2">
+          <div className="flex items-center gap-4 lg:gap-8 mt-2">
             <div className="flex items-center gap-1">
                 <FaPhoneAlt className="text-purple-400" /> 
                 <a href="tel:+916386866386" className="hover:text-purple-400">
