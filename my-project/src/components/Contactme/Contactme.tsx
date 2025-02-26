@@ -56,12 +56,10 @@ type Props = {};
 
   return (
     <div ref={ref} className={`${bo} flex flex-col justify-start  lg:justify-center items-center min-h-screen px-4`}>
-      <div className={`${bo} flex flex-col w-full max-w-2xl mt-[20%] lg:mt-4`}>
+      <div className={`${bo} flex flex-col w-full max-w-2xl mt-[10%] lg:mt-4`}>
         <h2 className={`text-5xl font-extrabold text-white text-center`}>
           LET'S WORK <span className={`block text-purple-600`}>TOGETHER</span>
         </h2>
-        
-
         <form onSubmit={contactFormik.handleSubmit} className={`flex flex-col mt-8 gap-6`}>
 
           <div className={`flex flex-col gap-4`}>
@@ -128,6 +126,16 @@ type Props = {};
             {contactFormik.isSubmitting ? "Sending..." : "Submit"}
           </button>
         </form>
+      </div>
+      <div className="app__footer-cards">
+        <div className="app__footer-card ">
+          <img src={images.email} alt="email" />
+          <a href="mailto:whorahulnayak@gmail.com" className="p-text">whorahulnayak@gmail.com</a>
+        </div>
+        <div className="app__footer-card">
+          <img src={images.mobile} alt="phone" />
+          <a href="tel:+91 7975672972" className="p-text">+91 7975672972</a>
+        </div>
       </div>
     </div>
   );

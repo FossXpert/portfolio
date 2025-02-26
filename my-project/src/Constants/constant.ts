@@ -1,4 +1,4 @@
-export const HOME= 'Home';
+export const HOME = 'Home';
 export const ABOUT = 'About';
 export const CONTACT = 'Contact';
 export const EXPERIENCE = 'Experience';
@@ -16,8 +16,12 @@ export const CODEPEN = 'codepen_icon';
 export const JSICON = 'jsIcon';
 export const REACTICON = 'reactIcon';
 export const NEXTJSICON = 'nextjsIcon';
-export const CSS3ICON  ='css3Icon';
+export const CSS3ICON = 'css3Icon';
 export const HTML5ICON = 'html5Icon';
 export const NGINX = 'nginxIcon';
 export const NODEJSICON = 'nodejsIcon';
 export const REDUXICON = 'reduxIcon';
+
+//images
+export const mobile = '../assets/mobile.png'
+export const email = '../assets/email.png'
