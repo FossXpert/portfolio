@@ -19,28 +19,34 @@
             "active": true
         },
         {
-            "name": "NextJS",
-            "icon": "nextjsIcon",
-            "color": "#C2C2C2",
-            "active": false
+            "name": "CSS3",
+            "icon": "css3Icon",
+            "color": "#FCE4EC",  
+            "active": true
         },
         {
-            "name": "NextJS",
-            "icon": "nextjsIcon",
-            "color": "#C2C2C2",
-            "active": false
+            "name": "HTML5",
+            "icon": "html5Icon",
+            "color": "#FFF3E0",  
+            "active": true
         },
         {
-            "name": "NextJS",
-            "icon": "nextjsIcon",
-            "color": "#C2C2C2",
-            "active": false
+            "name": "NGINX",
+            "icon": "nginxIcon",
+            "color": "#E8F5E9",  
+            "active": true
         },
         {
-            "name": "NextJS",
-            "icon": "nextjsIcon",
-            "color": "#C2C2C2",
-            "active": false
+            "name": "NodeJS",
+            "icon": "nodejsIcon",
+            "color": "#E3F2FD",  
+            "active": true
+        },
+        {
+            "name": "Redux",
+            "icon": "reduxIcon",
+            "color": "#F3E5F5",  
+            "active": true
         }
     ]
 }

@@ -1,6 +1,6 @@
 import jsIcon from './js.svg';
 import reactIcon from './mdi_react.svg';
-import nextjsIcon from './next.svg';
+import nextjsIcon from './nextjs.svg';
 import reduxIcon from './redux.svg'
 import html5Icon from './html5.svg'
 import css3Icon from './css3.svg'
