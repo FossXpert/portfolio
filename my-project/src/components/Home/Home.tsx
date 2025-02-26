@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Footer from '../Footer/footer';
 
 type Props = {}
-export const bo = 'border'
+export const bo = ''
 
 const Home = (props: Props) => {
   <Analytics />

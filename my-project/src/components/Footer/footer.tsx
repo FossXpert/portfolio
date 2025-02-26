@@ -3,8 +3,8 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="text-gray-300 py-6">
-      <div className=" mx-auto flex flex-col items-center justify-center text-center space-y-4 md:flex-row md:justify-between md:text-left">
+    <footer className="text-gray-300 py-6 lg:py-10 mt-10">
+      <div className=" mx-auto flex flex-col items-center justify-center text-center gap-2">
         
         {/* Contact Info */}
         <div>

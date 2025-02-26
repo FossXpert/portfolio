@@ -45,7 +45,7 @@
       "country":"India",
       "city":"Chandigarh",
       "contract":"Full-Time",
-      "enable":"false"
+      "enable":"true"
     },
     {
       "title": "Web Developer Intern",
@@ -68,7 +68,7 @@
       "country":"India",
       "city":"Chandigarh",
       "contract":"Full-Time",
-      "enable":"false"
+      "enable":"true"
     }
   ]
 }

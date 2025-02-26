@@ -21,8 +21,8 @@ type Props = {
 const Projects = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
     const {isMobile} = useIsMobile();
     return (
-        <div ref={ref} className={`${bo} flex justify-center items-center text-white max-w-[100vw] min-h-screen`}>
-            <div className={`${bo} relative flex w-[99vw] justify-center lg:w-[80vw] h-[600px] mt-[2%]`}>
+        <div ref={ref} className={`${bo} flex justify-center items-center text-white max-w-[100vw] h-auto`}>
+            <div className={`${bo} relative flex w-[99vw] justify-center lg:w-[80vw] h-[600px] mt-[20%] lg:mt-[7%]`}>
                 {!isMobile &&<div className={`${bo} flex flex-col items-center w-[30%] h-[full] bg-[#211F23]/35 rounded-[16px]`} >
                     <img src={"https://sprl.in/y6k8ibZ"} className={`${bo} bg-transparent w-[240px] h-[280px] mt-[2rem] rounded-[16px] overflow-hidden object-cover`} />
                     <h1 className={`${bo} w-[100%] h-[auto] bg-transparent text-[2rem] font-bold p-1 text-center text-gray-100`}>Rahul Ray </h1>
