@@ -4,7 +4,8 @@ import {
   HOME, ABOUT, CONTACT,
   GITHUB, JSICON, REACTICON, NEXTJSICON,
   EXPERIENCE,
-  PROJECTS
+  PROJECTS,
+  CSS3ICON
 } from '../../Constants/constant';
 import { BaseHeaderProps } from '../../models/models';
 
@@ -36,7 +37,8 @@ export const getIconSvg = (iconName: string) => {
       return svgIcons["reactIcon"];
     case NEXTJSICON:
       return svgIcons["nextjsIcon"];
-    case 
+    case CSS3ICON:
+      return svgIcons["css3"]
   }
 }
 

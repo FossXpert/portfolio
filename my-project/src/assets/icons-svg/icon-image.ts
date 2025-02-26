@@ -11,9 +11,9 @@ export default {
     jsIcon:jsIcon,
     reactIcon:reactIcon,
     nextjsIcon:nextjsIcon,
-    html5:html5Icon,
-    css3:css3Icon,
-    redux:reduxIcon,
-    nginx:nginxIcon,
-    nodejs:nodejsIcon
+    html5Icon:html5Icon,
+    css3Icon:css3Icon,
+    reduxIcon:reduxIcon,
+    nginxIcon:nginxIcon,
+    nodejsIcon:nodejsIcon
 }
