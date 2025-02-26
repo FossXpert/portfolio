@@ -8,7 +8,7 @@ import Contactme from '../Contactme/Contactme';
 import { Analytics } from "@vercel/analytics/react"
 
 type Props = {}
-export const bo = ''
+export const bo = 'border'
 
 const Home = (props: Props) => {
   <Analytics />
