@@ -56,7 +56,7 @@ type Props = {};
 
   return (
     <div ref={ref} className={`${bo} flex flex-col justify-start lg:justify-center items-center h-auto px-4`}>
-      <div className={`${bo} flex flex-col w-full max-w-2xl mt-16 lg:mt-8`}>
+      <div className={`${bo} flex flex-col w-full max-w-2xl mt-16 lg:mt-[8rem]`}>
         <h2 className={`text-5xl font-extrabold text-white text-center`}>
           LET'S WORK <span className={`block text-purple-600`}>TOGETHER</span>
         </h2>
