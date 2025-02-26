@@ -1,5 +1,5 @@
 import React from 'react';
-import headerData from '../../assets/header.json';
+import headerData from './header.json';
 import { getIcon } from './Header';
 
 
