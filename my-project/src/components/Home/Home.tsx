@@ -26,7 +26,7 @@ const Home = (props: Props) => {
     <>
     <div ref={homeRef} className={`flex flex-col max-w-[99vw] px-[1%] h-[auto] ${bo} !border-yellow-500 justify-center`}>
        <div><Header experienceRef={experienceRef} projectRef={projectRef} contactRef={contactRef} homeRef={homeRef} /></div>
-       <div><Banner title={title} description={description}/></div>
+       <div><Banner title={title} description={description} experienceRef={experienceRef}/></div>
        <div><Carousel/></div>
        <div><Experience ref={experienceRef} /></div> {/* Pass ref to Experience */}
        <div><Projects ref={projectRef} technologies={[]}/></div>
