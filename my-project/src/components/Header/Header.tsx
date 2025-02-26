@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import headerData from '../../assets/header.json';
+import headerData from './header.json';
 import {
   HOME, ABOUT, CONTACT,
   GITHUB, JSICON, REACTICON, NEXTJSICON,
@@ -96,7 +96,7 @@ const Header = ({ experienceRef, projectRef, contactRef, homeRef }: Props) => {
               <button
                 key={index}
                 onClick={() => scrollToComponent(value.label)}
-                className={`text-purple-300`}
+                className={`text-purple-300 text-sm lg:text-[1rem]`}
               >
                 {value.label}
               </button>

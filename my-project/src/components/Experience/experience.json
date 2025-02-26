@@ -6,10 +6,11 @@
       "startYear": 2022,
       "endYear": "Present",
       "description": [
-        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
-        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
-        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS.",
-        "Developing and maintaining the front-end of various web applications using React.js and Tailwind CSS."
+        "Developed and maintained multiple mini frontends using React, Next.js, and TypeScript, ensuring seamless integration and high performance.",
+        "Engineered a global state management solution with Redux and TypeScript for scalable and type-safe data flow.",
+        "Optimized UI components using MUI and Tailwind CSS to enhance responsiveness and maintain a consistent design.",
+        "Implemented unit testing with Jest and React Testing Library, improving test coverage and reducing regressions.",
+        "Built a dynamic skill matrix dashboard using React, Redux, and Node.js-MySQL for skill tracking and analytics."
       ],
       "skills": [
         "React.js",
@@ -19,10 +20,10 @@
         "NextJS"
       ],
       "id": "1",
-      "country":"India",
-      "city":"Chandigarh",
-      "contract":"Full-Time",
-      "enable":"true"
+      "country": "India",
+      "city": "Chandigarh",
+      "contract": "Full-Time",
+      "enable": "true"
     },
     {
       "title": "UI/UX Designer",
@@ -42,10 +43,10 @@
         "User Research"
       ],
       "id": "1",
-      "country":"India",
-      "city":"Chandigarh",
-      "contract":"Full-Time",
-      "enable":"true"
+      "country": "India",
+      "city": "Chandigarh",
+      "contract": "Full-Time",
+      "enable": "false"
     },
     {
       "title": "Web Developer Intern",
@@ -65,10 +66,10 @@
         "Bootstrap"
       ],
       "id": "3",
-      "country":"India",
-      "city":"Chandigarh",
-      "contract":"Full-Time",
-      "enable":"true"
+      "country": "India",
+      "city": "Chandigarh",
+      "contract": "Full-Time",
+      "enable": "false"
     }
   ]
 }
