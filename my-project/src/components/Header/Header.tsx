@@ -6,7 +6,7 @@ import {
   EXPERIENCE,
   PROJECTS
 } from '../../Constants/constant';
-import { BaseHeaderProps } from '@/models/models';
+import { BaseHeaderProps } from '../../models/models';
 
 import Icons from '../../assets/Icons';
 import svgIcons from '../../assets/icons-svg/icon-image'
@@ -36,6 +36,7 @@ export const getIconSvg = (iconName: string) => {
       return svgIcons["reactIcon"];
     case NEXTJSICON:
       return svgIcons["nextjsIcon"];
+    case 
   }
 }
 
