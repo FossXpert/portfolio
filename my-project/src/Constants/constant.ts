@@ -25,3 +25,4 @@ export const REDUXICON = 'reduxIcon';
 //images
 export const mobile = '../assets/mobile.png'
 export const email = '../assets/email.png'
+// export {default as images} from './images';

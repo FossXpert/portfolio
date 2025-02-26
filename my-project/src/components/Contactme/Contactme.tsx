@@ -127,16 +127,6 @@ type Props = {};
           </button>
         </form>
       </div>
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
-          <a href="mailto:whorahulnayak@gmail.com" className="p-text">whorahulnayak@gmail.com</a>
-        </div>
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+91 7975672972" className="p-text">+91 7975672972</a>
-        </div>
-      </div>
     </div>
   );
 });
