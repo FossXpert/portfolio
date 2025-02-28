@@ -6,7 +6,7 @@ export const useDownloadPdf = () => {
   const downloadPdf = async () => {
     try {
       setIsLoading(true); // Set loading to true before fetching
-      const fileUrl = "https://9cehvukx9sf8gj2k.public.blob.vercel-storage.com/Resume/Rahul_Resume_Ite1-urrcS14Rl9EMWnCoZNJKjUtfN1Fl9S.pdf";
+      const fileUrl = "https://9cehvukx9sf8gj2k.public.blob.vercel-storage.com/Resume/Rahul_Resume_Ite1.pdf";
       
       const response = await fetch(fileUrl);
       const blob = await response.blob(); // Convert response to Blob
