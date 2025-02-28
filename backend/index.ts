@@ -17,7 +17,10 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
-
+app.use((req, res, next) => {
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl} from ${req.headers.host}`);
+    next();
+});
 app.use('/api/getcontactForm', contactController);
 
 app.listen(process.env.PORT, () => {
