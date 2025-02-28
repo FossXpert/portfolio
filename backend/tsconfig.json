@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2016",
-    "module": "commonjs",
-    "outDir": "./dist",
+    "module": "CommonJS",
+    "outDir": "/backend/dist",
+    "rootDir": "./",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "esModuleInterop": true   // Enable ES module interop
