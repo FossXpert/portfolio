@@ -20,7 +20,7 @@ app.use(cors({
     credentials: true,
 }));
 app.use((req, res, next) => {
-    console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl} from ${req.headers.origin}`);
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl} from ${req.headers.host}`);
     next();
 });
 
