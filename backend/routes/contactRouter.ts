@@ -6,8 +6,10 @@ const contactRouter = express.Router();
 
 
 
-contactRouter.post("/getcontactForm", contactController);
+contactRouter.post("/getcontactForm",contactController );
 
-contactRouter.get("hello", (req, res) => {
+contactRouter.get("/hello", (req, res) => {
     res.send("Hello World");
 })
+
+export default contactRouter;
