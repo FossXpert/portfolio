@@ -47,13 +47,12 @@ const contactModel_1 = __importStar(require("../model/contactModel"));
 const contactController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const validatedData = contactModel_1.contactMeSchema.parse(req.body);
-        // Save validated data to MongoDB
         const newContact = new contactModel_1.default(validatedData);
         yield newContact.save();
         res.status(201).json({ message: `Message sent successfully! ${validatedData.name}` });
     }
     catch (error) {
-        res.status(400).json({ error: error.errors || "Invalid data" });
+        res.status(400).json({ error: error || "Invalid data" });
     }
 });
 exports.contactController = contactController;
