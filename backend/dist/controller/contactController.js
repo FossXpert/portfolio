@@ -50,7 +50,7 @@ const contactController = (req, res) => __awaiter(void 0, void 0, void 0, functi
         // Save validated data to MongoDB
         const newContact = new contactModel_1.default(validatedData);
         yield newContact.save();
-        res.status(201).json({ message: "Message sent successfully!" });
+        res.status(201).json({ message: `Message sent successfully! ${validatedData.name}` });
     }
     catch (error) {
         res.status(400).json({ error: error.errors || "Invalid data" });

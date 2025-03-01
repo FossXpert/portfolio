@@ -7,3 +7,7 @@ const express_1 = __importDefault(require("express"));
 const contactController_1 = require("../controller/contactController");
 const contactRouter = express_1.default.Router();
 contactRouter.post("/getcontactForm", contactController_1.contactController);
+contactRouter.get("/hello", (req, res) => {
+    res.send("Hello World");
+});
+exports.default = contactRouter;
