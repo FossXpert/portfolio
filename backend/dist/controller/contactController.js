@@ -52,7 +52,7 @@ const contactController = (req, res) => __awaiter(void 0, void 0, void 0, functi
         res.status(201).json({ message: `Message sent successfully! ${validatedData.name}` });
     }
     catch (error) {
-        res.status(400).json({ error: error || "Invalid data" });
+        res.status(400).json({ error: error.message });
     }
 });
 exports.contactController = contactController;

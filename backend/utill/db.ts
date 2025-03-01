@@ -1,13 +1,20 @@
 import mongoose from "mongoose";
 require('dotenv').config();
 
-const connectionString: string = process.env.MONGO_URI || '';
+const connectionString = process.env.MONGO_URI;
+
+if (!connectionString) {
+    throw new Error('MONGO_URI is not defined in the environment variables');
+}
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(connectionString);
+        await mongoose.connect(connectionString, {
+            maxPoolSize: 10, // Maintain up to 10 socket connections
+        });
+        console.log("MongoDB Connected with connection pooling");
     } catch (error: any) {
-        console.log(error.message)
+        console.log(error.message);
     }
 }
 

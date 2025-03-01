@@ -11,6 +11,6 @@ export const contactController = async (req:Request,res:Response) => {
         res.status(201).json({ message: `Message sent successfully! ${validatedData.name}` });
         
     } catch (error:any) {
-        res.status(400).json({ error: error || "Invalid data" });
+        res.status(400).json({ error: error.message });
     }
 }
