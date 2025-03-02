@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmation Mail</title>
+    <style>
+        /* Dark Mode Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            color: #bb86fc;
+        }
+
+        .field {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .field label {
+            font-weight: bold;
+            color: #bb86fc;
+        }
+
+        .field p {
+            background: #2a2a2a;
+            padding: 10px;
+            border-radius: 5px;
+            color: #e0e0e0;
+            word-wrap: break-word;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>New Enquiry Received</h2>
+
+        <div class="field">
+            <label>Name:</label>
+            <p><%= visitor.name %></p>
+        </div>
+
+        <div class="field">
+            <label>Email:</label>
+            <p><%= visitor.email %></p>
+        </div>
+
+        <div class="field">
+            <label>Message:</label>
+            <p><%= visitor.message %></p>
+        </div>
+
+        <div class="footer">
+            <p>This is an automated email. Please do not reply.</p>
+            <p>For support, contact us at <a href="mailto:ray_rahul@outlook.com">ray_rahul@outlook.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

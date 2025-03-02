@@ -41,14 +41,53 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.contactController = void 0;
 const contactModel_1 = __importStar(require("../model/contactModel"));
+const sendMail_1 = __importDefault(require("../util/sendMail"));
 const contactController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const validatedData = contactModel_1.contactMeSchema.parse(req.body);
         const newContact = new contactModel_1.default(validatedData);
         yield newContact.save();
+        const emailData = {
+            visitor: {
+                name: validatedData.name,
+                email: validatedData.email,
+                message: validatedData.message
+            }
+        };
+        const recipients = ["ray_rahul@outlook.com", "rahulray8516@gmail.com"];
+        try {
+            console.log("Before sending email");
+            yield (0, sendMail_1.default)({
+                email: validatedData.email,
+                subject: `Thanks ${validatedData.name} for Visiting My Portfolio`,
+                template: `revert.ejs`,
+                data: emailData
+            });
+            console.log("After sending email");
+        }
+        catch (error) {
+            console.error("Error in sendMail:", error.message);
+        }
+        //----to me
+        try {
+            console.log("Before sending email to rahul");
+            yield (0, sendMail_1.default)({
+                email: recipients,
+                subject: `New Enquiry Recieved From ${validatedData.name}`,
+                template: `enquiry.ejs`,
+                data: emailData
+            });
+            console.log("After sending email to rahul");
+        }
+        catch (error) {
+            console.error("Error in sendMail:", error.message);
+        }
         res.status(201).json({ message: `Message sent successfully! ${validatedData.name}` });
     }
     catch (error) {
