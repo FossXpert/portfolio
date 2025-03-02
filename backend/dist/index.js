@@ -19,7 +19,16 @@ const contactRouter_1 = __importDefault(require("./routes/contactRouter"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const PORT = process.env.PORT || 5000;
 const app = (0, express_1.default)();
-(0, db_1.default)();
+(0, db_1.default)()
+    .then(() => {
+    console.log("🚀 Server is starting...");
+    app.listen(PORT, () => {
+        console.log(`✅ Server running on port ${PORT}`);
+    });
+})
+    .catch((error) => {
+    console.error("❌ Server failed to start due to DB connection issue:", error);
+});
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({ origin: '*' })); // Allow all origins
 app.use((req, res, next) => {
@@ -35,7 +44,3 @@ app.get("/db", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         status: states[status] || "Unknown",
     });
 }));
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-    (0, db_1.default)();
-});
