@@ -1,12 +1,14 @@
 
 import express from 'express';
 import cors from 'cors';
-import connectDB from './utill/db';
-import { contactController } from './controller/contactController';
+import connectDB from './util/db';
 import contactRouter from './routes/contactRouter';
+import mongoose from 'mongoose';
 const PORT = process.env.PORT || 5000;
 
 const app = express();
+connectDB();
+
 app.use(express.json());
 app.use(cors({ origin: '*' })); // Allow all origins
 app.use((req, res, next) => {
@@ -14,8 +16,17 @@ app.use((req, res, next) => {
     next();
 });
 app.use('/api/contact', contactRouter);
+app.get("/db", async (req, res) => {
+    const status = mongoose.connection.readyState;
+    const states = ["Disconnected", "Connected", "Connecting", "Disconnecting"];
+  
+    res.json({
+      statusCode: status,
+      status: states[status] || "Unknown",
+    });
+  });
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
     connectDB();
 })
