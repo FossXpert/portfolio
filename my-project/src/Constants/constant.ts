@@ -26,3 +26,5 @@ export const REDUXICON = 'reduxIcon';
 export const mobile = '../assets/mobile.png'
 export const email = '../assets/email.png'
 // export {default as images} from './images';
+
+export const REACT_APP_BACKEND_URL="https://portfolio-backend-tau-snowy.vercel.app" 

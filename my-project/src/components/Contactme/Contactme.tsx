@@ -2,9 +2,11 @@ import React, { forwardRef } from "react";
 import { bo } from "../Home/Home";
 import { z } from "zod";
 import { useFormik } from "formik";
+import { REACT_APP_BACKEND_URL } from "../../Constants/constant";
 
 type Props = {};
- const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
+
+const Contactme = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
   
   // Schema Validation using Zod
   const contactMeSchema = z.object({
@@ -33,7 +35,7 @@ type Props = {};
     }, // Here I am converting zod schema to formik validator, there is alos an oanother way see loginmodal in frontend-me code
     onSubmit: async (values, { resetForm }) => {
       try {
-        const response = await fetch(`https://portfolio-backend-o0gwul62x-rahul-rays-projects.vercel.app/api/getcontactForm`, {
+        const response = await fetch(`${REACT_APP_BACKEND_URL}/api/contact/getcontactForm`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
