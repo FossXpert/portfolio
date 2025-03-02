@@ -6,8 +6,8 @@
         "description": "A personal portfolio showcasing my skills, projects, and achievements.",
         "technologies": ["React", "Tailwind CSS", "Figma"],
         "image": "/portfolio.webp",
-        "github": "",
-        "liveDemo": "https://yourportfolio.com",
+        "github": "https://github.com/FossXpert/portfolio",
+        "liveDemo": "https://portofolio-rahul.vercel.app/",
         "active":"true"
       },
       {
@@ -16,8 +16,8 @@
         "description": "A full-stack e-commerce platform with product listings, cart, and checkout.",
         "technologies": ["MERN Stack", "Redux", "Stripe API"],
         "image": "/portfolio.webp",
-        "github": "https://github.com/yourusername/ecommerce",
-        "liveDemo": "https://yourecommerce.com",
+        "github": "https://github.com/FossXpert/udemy-pro",
+        "liveDemo": "https://udemy-pro.vercel.app/",
         "active":"true"
       },
       {
