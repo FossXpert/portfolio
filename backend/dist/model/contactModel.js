@@ -43,13 +43,13 @@ exports.contactMeSchema = zod_1.z.object({
     message: zod_1.z
         .string()
         .min(1, { message: `Message must not be empty` })
-        .max(500, { message: `Only up to 500 characters supported` }),
+        .max(1000, { message: `Only up to 500 characters supported` }),
 });
 //   type IContact = z.infer<typeof contactMeSchema>;
 const contactSchema = new mongoose_1.Schema({
     name: { type: String, required: true, trim: true },
     email: { type: String, required: true, trim: true, lowercase: true },
-    message: { type: String, required: true, maxlength: 500 },
+    message: { type: String, required: true, maxlength: 1000 },
 }, { timestamps: true });
 const contactModel = mongoose_1.default.model('portfolio', contactSchema);
 exports.default = contactModel;
