@@ -27,7 +27,8 @@ const sendMail = (options) => __awaiter(void 0, void 0, void 0, function* () {
         }
     });
     const { email, subject, template, data } = options;
-    const templatePath = path_1.default.join(__dirname, '../mail', template);
+    // const templatePath = path.join(__dirname,'../mail',template);
+    const templatePath = path_1.default.resolve(process.cwd(), 'mail', template);
     const html = yield ejs_1.default.renderFile(templatePath, data);
     const mailOptions = {
         from: process.env.SMTP_EMAIL,
