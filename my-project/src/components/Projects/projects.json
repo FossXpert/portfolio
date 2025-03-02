@@ -12,10 +12,10 @@
       },
       {
         "id": 2,
-        "title": "E-commerce Platform",
-        "description": "A full-stack e-commerce platform with product listings, cart, and checkout.",
+        "title": "E-Learning Platform",
+        "description": "A full-stack e-leaning platform with course listings, cart, and checkout.",
         "technologies": ["MERN Stack", "Redux", "Stripe API"],
-        "image": "/portfolio.webp",
+        "image": "https://9cehvukx9sf8gj2k.public.blob.vercel-storage.com/udemy-pro-asset/udemy-OTI6jKPIDXXFsROaf8cQkCHUAkb9Kj.gif",
         "github": "https://github.com/FossXpert/udemy-pro",
         "liveDemo": "https://udemy-pro.vercel.app/",
         "active":"true"

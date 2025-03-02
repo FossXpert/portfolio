@@ -78,6 +78,34 @@
                 "id":"5"
             }
         ]
+    },
+    "icon_card":{
+        "navigation":[
+            {
+                "name":"X",
+                "icon":"x_icon",
+                "active":"true",
+                "isHide":"false",
+                "id":"1",
+                "link":"https://github.com/FossXpert"
+            },
+            {
+                "name":"Telegram",
+                "icon":"telegram_icon",
+                "active":"true",
+                "isHide":"false",
+                "id":"2",
+                "link":"https://www.linkedin.com/in/rahulray8516/"
+            },
+            {
+                "name":"Medium",
+                "icon":"medium_icon",
+                "active":"true",
+                "isHide":"false",
+                "id":"3",
+                "link":""
+            }
+        ]
     }
 
 }
