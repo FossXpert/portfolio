@@ -12,7 +12,7 @@ const connectDB = async () => {
         await mongoose.connect(connectionString, {
             maxPoolSize: 10, // Maintain up to 10 socket connections
         });
-        console.log("MongoDB Connected with connection pooling");
+        // console.log("MongoDB Connected with connection pooling");
     } catch (error: any) {
         console.log(error.message);
     }

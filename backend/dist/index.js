@@ -21,13 +21,13 @@ const PORT = process.env.PORT || 5000;
 const app = (0, express_1.default)();
 (0, db_1.default)()
     .then(() => {
-    console.log("🚀 Server is starting...");
+    console.log("Server is starting...");
     app.listen(PORT, () => {
-        console.log(`✅ Server running on port ${PORT}`);
+        console.log(`Server running on port ${PORT}`);
     });
 })
     .catch((error) => {
-    console.error("❌ Server failed to start due to DB connection issue:", error);
+    console.error("Server failed to start due to DB connection issue:", error);
 });
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({ origin: '*' })); // Allow all origins

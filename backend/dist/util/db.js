@@ -23,7 +23,7 @@ const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
         yield mongoose_1.default.connect(connectionString, {
             maxPoolSize: 10, // Maintain up to 10 socket connections
         });
-        console.log("MongoDB Connected with connection pooling");
+        // console.log("MongoDB Connected with connection pooling");
     }
     catch (error) {
         console.log(error.message);
