@@ -6,7 +6,7 @@ export const useDownloadPdf = () => {
   const downloadPdf = async () => {
     try {
       setIsLoading(true); // Set loading to true before fetching
-      const fileUrl = "/Rahul_Resume_Ite1";
+      const fileUrl = "/Rahul_Resume_Ite1.pdf";
       
       const response = await fetch(fileUrl);
       const blob = await response.blob(); // Convert response to Blob
