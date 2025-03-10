@@ -10,6 +10,7 @@ const Icons: Record<string, IconType> = {
     medium_icon: FaMedium,
     figma_icon: FaFigma,
     codepen_icon: FaCodepen,
-    x_icon:FaXTwitter
+    x_icon:FaXTwitter,
+    
 };
 export default Icons;

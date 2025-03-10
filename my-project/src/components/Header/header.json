@@ -65,7 +65,7 @@
             {
                 "name":"Figma",
                 "icon":"figma_icon",
-                "active":"true",
+                "active":"false",
                 "isHide":"false",
                 "id":"4",
                 "link":"https://sprl.in/rahul-figma"
@@ -75,7 +75,16 @@
                 "icon":"codepen_icon",
                 "active":"false",
                 "isHide":"false",
-                "id":"5"
+                "id":"5",
+                "link":"https://codepen.io/rahulray8516"
+            },
+            {
+                "name":"X",
+                "icon":"x_icon",
+                "active":"true",
+                "isHide":"false",
+                "id":"6",
+                "link":"https://x.com/fossxpert"
             }
         ]
     },
