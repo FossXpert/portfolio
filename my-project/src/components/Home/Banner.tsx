@@ -26,7 +26,7 @@ const Banner: FC<Props> = ({ title, description }, experienceRef) => {
       {isMobile &&
         <div className={`${bo} mx-[2%] text-white flex flex-col items-center mt-[8rem] lg:mt-[9rem]`}>
           <div className={`flex ${bo} w-[90%] items-center justify-center`}>
-            <img src={bannerImage} alt='banner' className={`w-[70%] h-[70%]`} />
+            <img src={bannerImage} alt='banner' className={`w-[70%] h-[70%]`} loading='lazy' />
           </div>
           <h1 className={`text-5xl lg:text-7xl p-2 `}>{title}</h1>
           <p className={` text-center	text-gray-400 p-2 font-light leading-[30px] text-[1.2rem]`}>{description}</p>
