@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 // import bannerImage from '../../assets/Group39.png';
-import bannerImage from '../../assets/hacker.avif'
+import bannerImage from '../../assets/hui.png'
 import { bo } from './Home';
 import useIsMobile from '../../redux/features/hook/useIsMobile';
 import { useDownloadPdf } from '../../Utills/utill';
