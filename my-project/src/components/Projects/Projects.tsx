@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react'
 import { bo } from '../Home/Home';
-import bannerImage from '../../assets/Group39.png';
 import IconComponenet from '../Header/IconComponenet';
 import projectList from './projects.json'
 import ProjectCard from './ProjectCard';
