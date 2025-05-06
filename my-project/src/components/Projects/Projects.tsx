@@ -34,7 +34,7 @@ const Projects = forwardRef<HTMLDivElement, Props>((props: Props, ref) => {
                     <h1 className={` text-4xl lg:text-5xl font-extrabold text-white text-center`}>
                         RECENT PROJECTS & <span className={`block text-purple-600`}>ACHIEVEMENTS</span>
                     </h1>
-                    <div className={`${bo} flex justify-center items-center gap-8 w-[100%] h-[87%] lg:h-[100%] rounded-[16px] p-4 flex-wrap overflow-auto`}>
+                    <div className={`${bo} flex flex-row justify-start items-center gap-8 w-[100%] h-[87%] lg:h-[100%] rounded-[16px] p-4 flex-wrap overflow-auto`}>
                         {
                             projectList.projects.filter((item) => item.active === 'true').map((value, index) => (
                                 <ProjectCard
