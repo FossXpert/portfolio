@@ -1,25 +1,6 @@
 {
     "projects": [
-      {
-        "id": 1,
-        "title": "Portfolio Website",
-        "description": "A personal portfolio showcasing my skills, projects, and achievements.",
-        "technologies": ["React", "Tailwind CSS", "Figma"],
-        "image": "/portfolio.webp",
-        "github": "https://github.com/FossXpert/portfolio",
-        "liveDemo": "https://portofolio-rahul.vercel.app/",
-        "active":"true"
-      },
-      {
-        "id": 2,
-        "title": "E-Learning Platform",
-        "description": "A full-stack e-leaning platform with course listings, cart, and checkout.",
-        "technologies": ["MERN Stack", "Redux", "Stripe API"],
-        "image": "https://9cehvukx9sf8gj2k.public.blob.vercel-storage.com/udemy-pro-asset/udemy-OTI6jKPIDXXFsROaf8cQkCHUAkb9Kj.gif",
-        "github": "https://github.com/FossXpert/udemy-pro",
-        "liveDemo": "https://udemy-pro.vercel.app/",
-        "active":"true"
-      },
+      
       {
         "id": 3,
         "title": "Tab Manager",
@@ -29,7 +10,27 @@
         "github": "https://github.com/FossXpert/tab-manager-extension",
         "liveDemo": "",
         "active": "true"
-      },      
+      }, 
+      {
+        "id": 2,
+        "title": "E-Learning Platform",
+        "description": "A full-stack e-leaning platform with course listings, cart, and checkout.",
+        "technologies": ["MERN Stack", "Redux", "Stripe API"],
+        "image": "https://9cehvukx9sf8gj2k.public.blob.vercel-storage.com/udemy-pro-asset/udemy-OTI6jKPIDXXFsROaf8cQkCHUAkb9Kj.gif",
+        "github": "https://github.com/FossXpert/udemy-pro",
+        "liveDemo": "https://udemy-pro.vercel.app/",
+        "active":"true"
+      }, 
+      {
+        "id": 1,
+        "title": "Portfolio Website",
+        "description": "A personal portfolio showcasing my skills, projects, and achievements.",
+        "technologies": ["React", "Tailwind CSS", "Figma"],
+        "image": "/portfolio.webp",
+        "github": "https://github.com/FossXpert/portfolio",
+        "liveDemo": "https://portofolio-rahul.vercel.app/",
+        "active":"true"
+      },   
       {
         "id": 4,
         "title": "Chat Application",
