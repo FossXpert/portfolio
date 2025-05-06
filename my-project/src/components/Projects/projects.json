@@ -22,7 +22,7 @@
       },
       {
         "id": 1,
-        "title": "Tab Manager – Chrome Extension",
+        "title": "Tab Manager",
         "description": "A Chrome extension for organizing, searching, and managing browser tabs with  React-based UI.",
         "technologies": ["React", "Manifest V3", "Chrome Extensions API"],
         "image": "/ui.webp",
