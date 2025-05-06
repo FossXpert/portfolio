@@ -23,7 +23,7 @@
       {
         "id": 1,
         "title": "Tab Manager – Chrome Extension",
-        "description": "A Chrome extension for organizing, searching, and managing browser tabs with an intuitive React-based UI.",
+        "description": "A Chrome extension for organizing, searching, and managing browser tabs with  React-based UI.",
         "technologies": ["React", "Manifest V3", "Chrome Extensions API"],
         "image": "https://9cehvukx9sf8gj2k.public.blob.vercel-storage.com/Resume/tab-manager.webp",
         "github": "https://github.com/FossXpert/tab-manager-extension",
