@@ -1,7 +1,7 @@
 {
     "projects": [
       {
-        "id": 3,
+        "id": 1,
         "title": "Portfolio Website",
         "description": "A personal portfolio showcasing my skills, projects, and achievements.",
         "technologies": ["React", "Tailwind CSS", "Figma"],
@@ -21,7 +21,7 @@
         "active":"true"
       },
       {
-        "id": 1,
+        "id": 3,
         "title": "Tab Manager",
         "description": "A Chrome extension for organizing, searching, and managing browser tabs.",
         "technologies": ["React", "Manifest V3", "Chrome Extensions API"],
