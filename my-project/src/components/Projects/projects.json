@@ -1,7 +1,7 @@
 {
     "projects": [
       {
-        "id": 1,
+        "id": 3,
         "title": "Portfolio Website",
         "description": "A personal portfolio showcasing my skills, projects, and achievements.",
         "technologies": ["React", "Tailwind CSS", "Figma"],
@@ -21,15 +21,15 @@
         "active":"true"
       },
       {
-        "id": 3,
-        "title": "Task Management App",
-        "description": "A productivity app for managing daily tasks and setting priorities.",
-        "technologies": ["Next.js", "Firebase", "Recoil"],
-        "image": "https://sprl.in/y6k8ibZ",
-        "github": "https://github.com/yourusername/taskmanager",
-        "liveDemo": "https://yourtaskmanager.com",
-        "active":"false"
-      },
+        "id": 1,
+        "title": "Tab Manager – Chrome Extension",
+        "description": "A Chrome extension for organizing, searching, and managing browser tabs with an intuitive React-based UI.",
+        "technologies": ["React", "Manifest V3", "Chrome Extensions API"],
+        "image": "https://9cehvukx9sf8gj2k.public.blob.vercel-storage.com/Resume/tab-manager.webp",
+        "github": "https://github.com/FossXpert/tab-manager-extension",
+        "liveDemo": "",
+        "active": "true"
+      },      
       {
         "id": 4,
         "title": "Chat Application",
