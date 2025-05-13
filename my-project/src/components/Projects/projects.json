@@ -8,7 +8,7 @@
         "technologies": ["React", "Manifest V3", "Chrome Extensions API"],
         "image": "/ui.webp",
         "github": "https://github.com/FossXpert/tab-manager-extension",
-        "liveDemo": "",
+        "liveDemo": "https://chromewebstore.google.com/detail/lndoaplmibiefdfpljoalnfoenigpdln?utm_source=item-share-cb",
         "active": "true"
       }, 
       {
